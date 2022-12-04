@@ -9,6 +9,7 @@ import com.example.demo.service.DeptServices;
 import java.util.List;
 
 @RestController
+// this is controller class
 public class TestController {
 	
 	@Autowired
