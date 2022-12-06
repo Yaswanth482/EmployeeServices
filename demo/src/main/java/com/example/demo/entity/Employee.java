@@ -23,6 +23,39 @@ public class Employee {
 
 	@Column(name = "published")
 	private String published;
+	
+	@Column(name = "eName")
+	private String eName;
+	
+	public String geteName() {
+		return eName;
+	}
+
+	public void seteName(String eName) {
+		this.eName = eName;
+	}
+
+	public String getCityName() {
+		return cityName;
+	}
+
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
+	public String getMobileNumber() {
+		return mobileNumber;
+	}
+
+	public void setMobileNumber(String mobileNumber) {
+		this.mobileNumber = mobileNumber;
+	}
+
+	@Column(name = "cityName")
+	private String cityName;
+	
+	@Column(name = "mobileNumber")
+	private String mobileNumber;
 
 	public Employee() {
 
@@ -63,7 +96,11 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", title=" + title + ", description=" + description + ", published=" + published
-				+ "]";
+				+ ", eName=" + eName + ", cityName=" + cityName + ", mobileNumber=" + mobileNumber + ", geteName()="
+				+ geteName() + ", getCityName()=" + getCityName() + ", getMobileNumber()=" + getMobileNumber()
+				+ ", getId()=" + getId() + ", getTitle()=" + getTitle() + ", getDescription()=" + getDescription()
+				+ ", getPublished()=" + getPublished() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+				+ ", toString()=" + super.toString() + "]";
 	}
 
 	

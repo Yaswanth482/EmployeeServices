@@ -6,10 +6,14 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.entity.Employee;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
-public interface DeptRepository  extends JpaRepository<Employee, Long>{
-    public List<Employee> findByPublished(String published);
+public interface DeptRepository extends JpaRepository<Employee, Long> {
 
+	List<Employee> findByPublished(String eName);
 
+	void deleteById(Long id);
+
+	 Optional<Employee> findById(Long id);
 }
