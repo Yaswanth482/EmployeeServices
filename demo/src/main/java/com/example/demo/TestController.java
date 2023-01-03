@@ -46,11 +46,4 @@ public class TestController {
 		deptServices.deleteEmployeeById(id);
 
 	}
-	@GetMapping("/get")
-	public Optional<Employee> getEmpById(@RequestParam("id") Long id) {
-		System.out.println("newget.........");
-		return deptServices.getEmployeeById(id);
-	}
-
-	
 }
