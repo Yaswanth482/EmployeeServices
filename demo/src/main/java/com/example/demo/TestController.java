@@ -33,8 +33,13 @@ public class TestController {
 		System.out.println("newget.........");
 		return deptServices.getEmployeeById(id);
 	}
+	
+	@GetMapping("/get")
+	public Employee getEmployeeByName(@RequestParam("name") String name) {
+		System.out.println("newget.........");
+		return deptServices.getEmployeeByName(name);
+	}
 
-	@PutMapping("/update")
 	public Employee updateEmployee(@RequestBody Employee employee) {
 		System.out.println("update.........");
 		return deptServices.saveOrUpdate(employee);

@@ -39,6 +39,10 @@ public class DeptServices {
 
 	}
 
+	public Employee getEmployeeByName(String Name) {
+		return deptRepository.getEmployeeByName(Name);
+
+	}
 	public Optional<Employee> getEmployeeById(Long id) {
 		Optional<Employee> e2 = deptRepository.findById(id);
 		return e2;
