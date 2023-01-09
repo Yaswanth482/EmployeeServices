@@ -16,4 +16,6 @@ public interface DeptRepository extends JpaRepository<Employee, Long> {
 	void deleteById(Long id);
 
 	 Optional<Employee> findById(Long id);
+	 
+	 Employee getEmployeeByName(String name);
 }
