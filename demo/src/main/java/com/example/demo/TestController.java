@@ -51,4 +51,10 @@ public class TestController {
 		deptServices.deleteEmployeeById(id);
 
 	}
+	@DeleteMapping("/delete/{id}")
+	public void deleteEmployeeName(@PathVariable("id") Long id) {
+		System.out.println("delete.........");
+		deptServices.deleteEmployeeById(id);
+
+	}
 }
