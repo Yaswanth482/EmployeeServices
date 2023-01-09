@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface DeptRepository extends JpaRepository<Employee, Long> {
+public interface DeptRepository extends JpaRepository<Employee, Long>{
 
 	List<Employee> findByPublished(String eName);
 

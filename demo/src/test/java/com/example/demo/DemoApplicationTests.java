@@ -32,19 +32,19 @@ class DemoApplicationTests {
 	}
 	@Test
 	public void testReadAll() {
-//		Employee e = new Employee();
-//		e.setId(1L);
-//		e.setTitle("yaswanth");
-//		e.setPublished("SC");
-//		e.setDescription("LE");
-//		dept.save(e);
-//		
-//		Employee e1 = new Employee();
-//		e1.setId(2L);
-//		e1.setTitle("sumanth");
-//		e1.setPublished("cse");
-//		e1.setDescription("aiml");
-//		dept.save(e1);
+		Employee e = new Employee();
+		e.setId(1L);
+		e.setTitle("yaswanth");
+		e.setPublished("SC");
+		e.setDescription("LE");
+		dept.save(e);
+		
+		Employee e1 = new Employee();
+		e1.setId(2L);
+		e1.setTitle("sumanth");
+		e1.setPublished("cse");
+		e1.setDescription("aiml");
+		dept.save(e1);
 		
 		
 		List<Employee> list = dept.findAll();

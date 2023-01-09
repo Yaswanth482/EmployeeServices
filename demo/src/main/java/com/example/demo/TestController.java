@@ -27,6 +27,12 @@ public class TestController {
 
 		return deptServices.getEmployee(eName);
 	}
+	
+	@GetMapping("/get/fatchall")
+	public List<Employee> getEmployees() {
+
+		return deptServices.getAllEmployee();
+	}
 
 	@GetMapping("/get")
 	public Optional<Employee> getEmployeeById(@RequestParam("id") Long id) {

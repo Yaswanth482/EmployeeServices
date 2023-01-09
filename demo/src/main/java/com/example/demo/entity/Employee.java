@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "employee")
@@ -16,6 +17,7 @@ public class Employee {
 	private long id;
 
 	@Column(name = "title")
+	@NotNull(message ="title should't be empty")
 	private String title;
 
 	@Column(name = "description")

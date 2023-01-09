@@ -28,6 +28,10 @@ public class DeptServices {
 
 		return e1;
 	}
+	
+	public List<Employee> getAllEmployee(){
+		return deptRepository.findAll();
+	}
 
 	public Employee saveOrUpdate(Employee employee) {
 		return deptRepository.save(employee);
